@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica&display=swap");
+
+.recipeMainDiv {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.recipeMainDiv h1 {
+  width: 100%;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  opacity: 0.7;
+  padding: 10px 0px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.recipesViewAll {
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.recipeContainer {
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  flex: 1;
+}
+.recipeCard {
+  margin: 9px;
+  padding: 0;
+  transition: 0.3s;
+}
+.recipeCard:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.recipeCard .card {
+  width: 280px;
+  height: fit-content;
+  background-color: rgb(36, 32, 36);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px #3e3e3e;
+}
+.recipeCard .card .top {
+  width: 100%;
+  height: 60%;
+
+  object-fit: cover;
+}
+.recipeCard .card .top p {
+}
+.recipeCard .card .top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.recipeCard .card .info {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.recipeCard .card .info .name {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 20px 10px 20px 15px;
+  font-size: 1.25rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.recipeCard .card .info .about {
+  padding: 15px;
+}
+.recipeCard .card .info .about span {
+  color: rgb(241, 192, 127);
+}
+.recipeCard .card .info .about p {
+  border-bottom: 1px dotted grey;
+  color: rgb(235, 235, 235);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .recipeCard {
+    margin: 10px;
+  }
+  .recipeCard .card {
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .recipeMainDiv {
+    padding: 0;
+  }
+  .recipesViewAll {
+    padding: 20px;
+  }
+  .recipeCard .card {
+    width: 166px;
+  }
+  .recipeMainDiv h1 {
+    padding: 50px 10px 30px 10px;
+  }
+  .recipeContainer {
+    padding-top: 0px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .recipeCard .card {
+    width: 200px;
+  }
+  .featuredRCP {
+    height: fit-content;
+    flex-wrap: wrap-reverse;
+  }
+  .FRCPsplide {
+    width: 100%;
+    height: 320px;
+  }
+  .featuredRCP .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .recipeCard .card .info .about p {
+    font-size: 11px;
+  }
+  .recipeCard .card {
+    width: 232px;
+    margin-bottom: 30px;
+  }
+}

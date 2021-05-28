@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto+Condensed&display=swap");
+* {
+  /* font-family: "Berkshire Swash", cursive; */
+  /* font-family: "Roboto Condensed", sans-serif; */
+}
+video {
+  width: 200px;
+  height: 200px;
+}
+.container {
+  width: 100%;
+  position: relative;
+  height: 94vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.705)),
+    url("../Assets/—Pngtree—food\ food\ snack\ eating\ goods_925656.jpg");
+  background-color: #1b1919;
+  background-size: cover;
+  display: flex;
+}
+.container .Chef_IMG {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+.container .Chef_IMG img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .Bottom_IMG {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  width: 400px;
+  height: 400px;
+  display: none;
+}
+.container .Bottom_IMG img {
+  width: 100%;
+  height: 100%;
+}
+.links {
+  width: 200px;
+  padding: 20px 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links ul li a {
+  color: beige;
+  margin: 20px 0px;
+}
+.links ul {
+  list-style: none;
+}
+.links ul li {
+  justify-content: center;
+  margin: 80px 0px;
+}
+.content {
+  flex: 1;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  flex-direction: column;
+  z-index: 1;
+}
+.content h1 {
+  font-family: "Berkshire Swash", cursive;
+  /* font-family: "Bebas Neue", cursive; */
+  font-size: 9rem;
+  color: white;
+  text-shadow: 0px 3px 5px rgb(61, 61, 61);
+}
+.content p {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding: 50px 0px 50px;
+}
+
+.lines {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lines ul li {
+  font-size: 1.5rem;
+  margin: 20% 0;
+  color: beige;
+}
+.heroButton {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.7s;
+  box-shadow: 0px 0px 15px rgb(32, 28, 28);
+  outline: none;
+}
+.heroButton:hover {
+  color: rgb(4, 44, 31);
+  transform: rotate(360deg);
+  box-shadow: 0px 0px 0px rgb(32, 28, 28);
+}
+.arrow {
+  font-size: 1.5rem !important;
+}
+.aboutMe {
+  width: 100%;
+  position: relative;
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  padding: 150px 0px;
+}
+.aboutMe .Abtext {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutmeAnimation {
+  width: 600px;
+  height: 600px;
+}
+.aboutMe .Abtext h1 {
+  padding-left: 50px;
+
+  font-size: 4rem;
+  font-family: "Bebas Neue", cursive;
+}
+.aboutMe .Abtext p {
+  padding: 50px 0px;
+  font-size: 1.3rem;
+  padding-left: 50px;
+}
+.aboutMe .Abtext .myInfo {
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutMe .Abtext .myInfo .infoM {
+  width: 150px;
+
+  margin: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutMe .Abtext .myInfo .infoM span {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255, 123, 0);
+}
+.aboutMe .Abtext .myInfo .infoM p {
+  padding: 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.aboutMe .Abtimg {
+  display: flex;
+  align-items: center;
+
+  width: 50%;
+  justify-content: center;
+}
+.aboutMe .Abtimg img {
+  width: 100%;
+}
+.featuredRCP {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: rgb(36, 32, 36);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.FRCPsplide {
+  width: 500px;
+  height: 500px;
+  background-color: burlywood;
+
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 50px;
+}
+.FRCPsplideSlide {
+  width: 100%;
+  overflow: hidden;
+}
+.FRCPsplideSlide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.FRCPIWrapper {
+  width: 40%;
+  height: 100%;
+  background-color: cadetblue;
+}
+.FRCPsplide.FRCPsplideSlide {
+  display: flex;
+  height: 100%;
+}
+.featuredRCP .right {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.featuredRCP .right div {
+  margin: 20px;
+}
+.featuredRCP .right h1 {
+  font-size: 3rem;
+
+  color: burlywood;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Bebas Neue", cursive;
+}
+.featuredRCP .right p {
+  margin-top: 40px;
+  font-size: 1.25rem;
+  word-wrap: break-word;
+  max-width: 800px;
+  color: rgb(252, 252, 240);
+}
+.featuredRCP .right button {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 80px;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(243, 106, 42);
+  color: rgb(247, 247, 247);
+}
+.featuredRCP .right button:hover {
+  box-shadow: 0px 0px 10px rgb(199, 83, 30);
+}
+.ourGoal {
+  width: 100%;
+  /* min-height: 40vh; */
+  background-color: #1b1919;
+  display: flex;
+  align-items: center;
+
+  height: 70vh;
+
+  position: relative;
+}
+.ourGoal .div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(241, 241, 241);
+  box-shadow: 0px 5px 5px white;
+  color: #1b1919;
+  width: 28%;
+  height: 100%;
+  padding: 20px;
+
+  max-width: 280px;
+}
+.ourGoal .div span {
+  margin: 15px;
+  height: 5px;
+  width: 50px;
+  background-color: rgb(255, 170, 91);
+}
+
+.ourGoal .div p {
+  margin-top: 20px;
+  text-align: center;
+}
+.ourGoal .div .ICON-Cont {
+  width: 100%;
+}
+.ourGoal .div .ICON-Cont img {
+  width: 100%;
+  height: 100%;
+}
+.WebsiteFooter {
+  width: 100%;
+  height: 20vh;
+  background-color: rgb(39, 38, 38);
+}
+.ourGoal_svg {
+  width: 500px;
+}
+.ourGoal_svg img {
+  width: 100%;
+  height: 100%;
+}
+.OG_Left {
+  height: 100%;
+  display: flex;
+
+  align-items: flex-end;
+}
+.OG_Right {
+  display: flex;
+  align-items: center;
+
+  flex: 1;
+  height: 100%;
+}
+.OurGoalCardCont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    height: 50vh;
+  }
+  .container .Chef_IMG {
+    width: 600px;
+  }
+  .container .Bottom_IMG {
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+  }
+  .content h1 {
+    font-size: 6rem;
+  }
+  .lines ul li {
+    font-size: 1.2rem;
+  }
+  .content p {
+    font-size: 1.5rem;
+  }
+  .lines ul li {
+    padding: 10% 0%;
+  }
+  .featuredRCP {
+    /* flex-wrap: wrap; */
+  }
+  .featuredRCP .right p {
+    /* font-size: 1rem; */
+    /* width: 200px; */
+  }
+  .featuredRCP .right h1 {
+    /* font-size: 2rem; */
+  }
+  .aboutMe .Abtext p {
+    /* font-size: 1rem; */
+  }
+  .aboutMe .Abtext .myInfo {
+    height: 100px;
+  }
+  .aboutMe .Abtext .myInfo .infoM span {
+    /* font-size: 2rem; */
+  }
+  .aboutMe .Abtext .myInfo .infoM p {
+    /* font-size: 0.8rem; */
+  }
+  .aboutMe .Abtext h1 {
+    /* font-size: 3rem; */
+  }
+  .aboutmeAnimation {
+    width: 450px;
+    height: 450px;
+  }
+  .ourGoal .div p {
+    width: 200px;
+    margin-top: 10px;
+  }
+  .ourGoal .div p:last-child {
+    opacity: 0.5;
+  }
+  .ourGoal {
+  }
+  .OurGoalCardCont {
+    justify-content: center;
+  }
+  .featuredRCP {
+  }
+  .ourGoal .div {
+    margin: 0px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* Contact Page */
+
+  .contactForm {
+    flex: 1;
+  }
+  .contactText {
+    width: 38%;
+  }
+  .contactText .Continfo h1 {
+    text-align: justify;
+  }
+  .contactText .Continfo p {
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .links {
+    width: 60px;
+    color: azure;
+  }
+  .links ul li {
+    margin: 50px 0px;
+  }
+  .links ul li a {
+    color: beige;
+  }
+  .lines ul li {
+    color: beige;
+  }
+  .linkIcon {
+    font-size: 50px;
+  }
+  .lines {
+    width: 10%;
+  }
+  .container {
+    justify-content: space-between;
+  }
+  .container {
+  }
+  .heroButton {
+    width: 50px;
+    height: 50px;
+  }
+  .featuredRCP {
+    padding: 50px 0px;
+  }
+  .featuredRCP .right button {
+    width: 110px;
+    height: 40px;
+    margin-top: 50px;
+  }
+  .aboutMe .Abtext .myInfo .infoM {
+    margin: 0px 0px;
+  }
+  .aboutMe .Abtext h1 {
+    text-align: center;
+    padding: 0;
+  }
+  .aboutMe .Abtext .myInfo {
+    height: fit-content;
+  }
+  .aboutMe .Abtext p {
+    padding: 0;
+    text-align: justify;
+    margin: 20px 0px;
+    width: 80%;
+  }
+  .aboutMe .Abtext .myInfo .infoM {
+    align-items: center;
+    margin: 0px 10px;
+  }
+  .aboutMe .Abtext {
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutMe {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .ourGoal {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 50px;
+  }
+  .OG_Left {
+    height: auto;
+  }
+  .FRCPsplide {
+    width: 350px;
+    height: 350px;
+  }
+
+  /* Contact Page */
+  .ContactDetails {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .contactText {
+    width: 100%;
+    margin: 50px 0px;
+  }
+  .contactText .Continfo h1 {
+    text-align: center;
+  }
+
+  .formDiv {
+    min-width: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .content h1 {
+    font-size: 5rem;
+  }
+  .links {
+    display: none;
+  }
+  .lines {
+    display: none;
+  }
+  .content {
+    width: 100%;
+  }
+  .ourGoal .div p {
+    width: 135px;
+  }
+  .aboutMe {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .aboutMe .Abtext {
+    width: 100%;
+
+    align-items: center;
+  }
+  .aboutMe .Abtext .myInfo {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+  }
+  .aboutMe .Abtext h1 {
+    margin-bottom: 20px;
+  }
+  .aboutMe .Abtext p {
+    margin-bottom: 20px;
+  }
+  .aboutMe .Abtext .myInfo .infoM {
+    margin-right: 0px;
+  }
+  .ourGoal .div {
+    margin: 0px;
+  }
+  .ourGoal_svg {
+    width: 100%;
+  }
+  .ourGoal .div {
+    margin: 5px;
+    width: 30%;
+  }
+  .FRCPsplide {
+    margin: 20px;
+  }
+  /* Contact Page */
+  .contactForm {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .aboutMe .Abtimg {
+    width: 100%;
+  }
+  .aboutmeAnimation {
+    width: 100%;
+  }
+  .ourGoal .div {
+    margin: 10px;
+    width: 60%;
+  }
+  .ourGoal .div p {
+    width: 100%;
+    font-size: 12px;
+  }
+  .FRCPsplide {
+    margin: 10px;
+  }
+
+  /* Contact Page */
+  .contactForm {
+    margin: 15px 0px;
+    padding: 5rem 0rem;
+    outline-offset: 0;
+  }
+}
