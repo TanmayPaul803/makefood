@@ -47,7 +47,7 @@
   width: 280px;
   height: fit-content;
   background-color: rgb(36, 32, 36);
-  border-radius: 10px;
+  border-radius: 3px;
   overflow: hidden;
   box-shadow: 0px 0px 15px #3e3e3e;
 }
@@ -63,7 +63,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 .recipeCard .card .info {
   height: 40%;
@@ -86,12 +86,18 @@
 }
 .recipeCard .card .info .about span {
   color: rgb(241, 192, 127);
+  font-family: "Khand", sans-serif;
+  font-size: 1.1rem;
+  margin-right: 5px;
 }
 .recipeCard .card .info .about p {
   border-bottom: 1px dotted grey;
   color: rgb(235, 235, 235);
   padding-bottom: 5px;
   margin-bottom: 5px;
+}
+.latest_recipe_lottie {
+  width: 100%;
 }
 @media only screen and (max-width: 1024px) {
   .recipeCard {
@@ -120,7 +126,7 @@
 }
 @media only screen and (max-width: 480px) {
   .recipeCard .card {
-    width: 200px;
+    width: 300px;
   }
   .featuredRCP {
     height: fit-content;
@@ -133,13 +139,23 @@
   .featuredRCP .right {
     width: 100%;
   }
+  .recipeCard .card .info .about p {
+    font-size: 15px;
+  }
+  .recipeCard {
+    margin-bottom: 50px;
+  }
+  .recipeCard .card .info .about span {
+    color: rgb(241, 192, 127);
+    font-family: "Khand", sans-serif;
+    font-size: 1.3rem;
+    margin-right: 5px;
+  }
 }
 @media only screen and (max-width: 360px) {
   .recipeCard .card .info .about p {
-    font-size: 11px;
   }
   .recipeCard .card {
-    width: 232px;
     margin-bottom: 30px;
   }
 }

@@ -58,7 +58,11 @@ function Home() {
           </SplideSlide>
         </Splide>
 
-        <div className="right">
+        <div
+          className="right"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <div>
             <h1>Featured Recipe</h1>
             <p>
@@ -125,7 +129,11 @@ function Home() {
 
         <div className="OG_Right">
           <div className="OurGoalCardCont">
-            <div className="div left">
+            <div
+              className="div left"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <div className="ICON-Cont">
                 <img src={newRecipe_CardSvg} alt="" />
               </div>
@@ -137,7 +145,11 @@ function Home() {
                 Consectetur,
               </p>
             </div>
-            <div className="div middle">
+            <div
+              className="div middle"
+              data-aos="zoom-out"
+              data-aos-duration="2000"
+            >
               <div className="ICON-Cont">
                 <img src={varietyOfDish_CardSvg} alt="" />
               </div>
@@ -148,7 +160,11 @@ function Home() {
                 Consectetur,
               </p>
             </div>
-            <div className=" div right">
+            <div
+              className=" div right"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               <div className="ICON-Cont">
                 <img src={contact_CardSvg} alt="" />
               </div>

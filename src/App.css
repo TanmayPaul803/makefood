@@ -509,6 +509,7 @@
 .footer-content .top .div1 .ftrLogo {
   display: flex;
   align-items: center;
+  color: white;
 }
 .footer-content .top .div1 .FtrContainer {
   height: fit-content;
@@ -1121,7 +1122,9 @@ form span {
   font-size: 1.2rem;
   color: #505050;
 }
-
+.logo {
+  font-size: 2.5rem !important;
+}
 @media only screen and (max-width: 1366px) {
 }
 
@@ -1443,6 +1446,27 @@ form span {
   .similer-recipe-container .recpeCard > .card {
     width: 260px !important;
     margin: 20px;
+  }
+  .ingredients .list li {
+    font-size: 1.4rem;
+  }
+  .RCP-infoBottom .desc p {
+    font-size: 1.4rem;
+  }
+
+  /* Footer */
+  .footer-content .top .div1 .FtrContainer {
+    width: 86%;
+  }
+  .footer-content .top .div1 {
+    margin-top: 20px;
+  }
+  .MuiSvgIcon-root {
+    color: white;
+    font-size: 2rem !important;
+  }
+  .footer-content .top .div1 .ftrLogo {
+    margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 360px) {

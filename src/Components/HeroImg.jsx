@@ -12,6 +12,8 @@ import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 import chef_svg from "../Assets/Svgs/undraw_Chef_cu0r.svg";
 import dish_svg from "../Assets/Svgs/undraw_cooking_lyxy.svg";
 const HeroImg = () => {
+  //Initializeing AOS
+
   return (
     <>
       <div className="container">
@@ -43,8 +45,16 @@ const HeroImg = () => {
         </div>
         <div className="content">
           <div className="textArea">
-            <h1>Make Food</h1>
-            <p>Make you own dish</p>
+            <h1 data-aos="zoom-out" data-aos-duration="2000">
+              Make Food
+            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
+              Make you own dish
+            </p>
           </div>
 
           <button className="heroButton">

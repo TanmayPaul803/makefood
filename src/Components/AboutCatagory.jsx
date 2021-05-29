@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../App.css";
 import { NavLink } from "react-router-dom";
-
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import Footer from "./Footer";
 
 function AboutCatagory(props) {
@@ -43,7 +43,13 @@ function AboutCatagory(props) {
           </div>
         </div>
         <div className="right">
-          <div className="catagoryThumbContainer">
+          <div
+            className="catagoryThumbContainer"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+          >
             <img src={thumb} alt="" />
           </div>
         </div>
@@ -62,15 +68,31 @@ function AboutCatagory(props) {
         </div>
 
         <div className="availableDishes">
-          <ol>
-            {data.map((val) => {
-              return (
-                <NavLink to={{ pathname: "/aboutRecipe", state: val }}>
-                  <li>{val.title}</li>
-                </NavLink>
-              );
-            })}
-          </ol>
+          {data.length === 0 ? (
+            <div className="latest_recipe_lottie">
+              <Player
+                autoplay
+                loop
+                src="https://assets7.lottiefiles.com/datafiles/lS0dvppV3Zjc2ZB/data.json"
+                style={{ height: "300px", width: "300px" }}
+              >
+                <Controls
+                  visible={false}
+                  buttons={["play", "repeat", "frame", "debug"]}
+                />
+              </Player>
+            </div>
+          ) : (
+            <ol>
+              {data.map((val) => {
+                return (
+                  <NavLink to={{ pathname: "/aboutRecipe", state: val }}>
+                    <li>{val.title}</li>
+                  </NavLink>
+                );
+              })}
+            </ol>
+          )}
         </div>
         <div className="availableDishes-Name">
           <h1>Available Dishes</h1>

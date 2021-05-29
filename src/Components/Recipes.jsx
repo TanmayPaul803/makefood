@@ -43,7 +43,7 @@ const Recipes = () => {
       setFevRecipe(anotherFevRecipe);
     }
   };
-  console.log(drinks);
+
   // useEffect(() => {
   //   const getData = async () => {
   //     const dessertsRes = await axios.get(
@@ -210,14 +210,26 @@ const Recipes = () => {
           />
         </form>
       </div>
-      {/* /////////////////////////////////////////////////// */}
+      {/* //////////////////    -----------End Of Form------------///////////////////////////////// */}
 
       {recipeData.length === 0 ? (
-        <h1 className="SearchResponseText">
-          {formSubmitTriggred === true && recipeData.length === 0
-            ? " Nothing Found"
-            : ""}
-        </h1>
+        <div className="SearchResponseText">
+          {formSubmitTriggred === true && recipeData.length === 0 ? (
+            <Player
+              autoplay
+              loop
+              src="https://assets7.lottiefiles.com/datafiles/lS0dvppV3Zjc2ZB/data.json"
+              style={{ height: "300px", width: "300px" }}
+            >
+              <Controls
+                visible={false}
+                buttons={["play", "repeat", "frame", "debug"]}
+              />
+            </Player>
+          ) : (
+            ""
+          )}
+        </div>
       ) : (
         <>
           <h1>Your Search Results: </h1>
@@ -242,7 +254,7 @@ const Recipes = () => {
           <Player
             autoplay
             loop
-            src="https://assets9.lottiefiles.com/temp/lf20_Jlg1O6.json"
+            src="https://assets7.lottiefiles.com/datafiles/lS0dvppV3Zjc2ZB/data.json"
             style={{ height: "300px", width: "300px" }}
           >
             <Controls

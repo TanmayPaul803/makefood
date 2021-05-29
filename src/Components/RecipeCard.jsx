@@ -2,7 +2,11 @@ import React from "react";
 
 function RecipeCard(props) {
   return (
-    <div className="recipeCard">
+    <div
+      className="recipeCard"
+      data-aos="zoom-out-down"
+      data-aos-duration="1500"
+    >
       <div className="card">
         <div className="top">
           <img

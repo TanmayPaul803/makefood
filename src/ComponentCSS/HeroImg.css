@@ -49,6 +49,8 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: wheat;
+  font-size: 1.5rem;
 }
 .links ul li a {
   color: beige;
@@ -262,7 +264,7 @@ video {
   display: flex;
   align-items: center;
 
-  height: 70vh;
+  height: 80vh;
 
   position: relative;
 }
@@ -366,11 +368,21 @@ video {
   .featuredRCP .right h1 {
     /* font-size: 2rem; */
   }
-  .aboutMe .Abtext p {
-    /* font-size: 1rem; */
+  .aboutMe .Abtext h1 {
+    text-align: center;
   }
+  .aboutMe .Abtext p {
+    text-align: justify;
+  }
+
   .aboutMe .Abtext .myInfo {
     height: 100px;
+    padding: 0px 10px;
+    padding-left: 50px;
+  }
+  .aboutMe .Abtext .myInfo .infoM {
+    width: auto;
+    margin: 0;
   }
   .aboutMe .Abtext .myInfo .infoM span {
     /* font-size: 2rem; */
@@ -393,6 +405,12 @@ video {
     opacity: 0.5;
   }
   .ourGoal {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 50px 0px;
+  }
+  .OG_Left {
+    width: 100%;
   }
   .OurGoalCardCont {
     justify-content: center;

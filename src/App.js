@@ -7,10 +7,15 @@ import Recipes from "./Components/Recipes";
 import ContactUs from "./Components/ContactUs";
 
 import SideNav from "./Components/SideNav";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // import { ToastContainer, toast } from "react-toastify";
 
 const App = () => {
+  AOS.init({
+    //initialize other settings
+  });
   return (
     <div className="App">
       <div className="AppContainer">
