@@ -3,7 +3,6 @@ import { React, useState } from "react";
 import "../App.css";
 import "../ComponentCSS/Catagories.css";
 import { Link, useHistory } from "react-router-dom";
-import Button from "@material-ui/core/Button";
 
 function MiddleNav() {
   const history = useHistory();
@@ -30,12 +29,14 @@ function MiddleNav() {
             onChange={(e) => {
               setInput(e.target.value);
             }}
-            onKeyPress={(e)=>{if(e.key==="Enter")
-            { setSearch(input);
-              history.push({
-                pathname: "/foodWebsite/searched",
-                state: search,
-              });}
+            onKeyPress={(e) => {
+              if (e.key === "Enter") {
+                setSearch(input);
+                history.push({
+                  pathname: "/foodWebsite/searched",
+                  state: search,
+                });
+              }
             }}
             value={input}
           />

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../ComponentCSS/LatestRecipes.css";
 import RecipeCard from "./RecipeCard";
 import axios from "axios";
-import { NavLink } from "react-bootstrap";
 
 function LatestRecipes() {
   const [randomRecipeData, setRandomRecipeData] = useState([
@@ -15,7 +14,7 @@ function LatestRecipes() {
       RCP_ID: "",
     },
   ]);
-  const [dailyHighlights, setDailyHighlights] = useState();
+
   console.log(randomRecipeData);
   useEffect(() => {
     const getRandomRecipeData = async () => {

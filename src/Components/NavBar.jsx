@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../ComponentCSS/NavBar.css";
 import FastfoodRoundedIcon from "@material-ui/icons/FastfoodRounded";
-import MenuIcon from "@material-ui/icons/Menu";
 import { NavLink } from "react-router-dom";
 import { BsList, BsX } from "react-icons/bs";
 const NavBar = () => {

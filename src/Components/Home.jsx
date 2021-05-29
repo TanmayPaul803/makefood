@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import HeroImg from "./HeroImg";
 import Catagories from "./Catagories";
 import LatestRecipes from "./LatestRecipes.jsx";
@@ -6,43 +5,27 @@ import MiddleNav from "./MiddleNav";
 import { Route, Switch } from "react-router-dom";
 import KeywordComponent from "./KeywordComponent.jsx";
 
-import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
 import SearchedComponent from "./SearchedComponent";
 
 /// icons///
-import RecipeBook from "../Assets/4329557-cooking/svg/016-recipe book.svg";
+
 import Footer from "./Footer";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
-
 ///lottie animation///
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 
-
 ///svgs///
-import ourGoalsvg from "../Assets/Svgs/undraw_Done_checking_re_6vyx.svg"
-import contact_CardSvg from "../Assets/Svgs/undraw_active_support_6rwo.svg"
-import varietyOfDish_CardSvg from "../Assets/Svgs/undraw_barbecue_3x93.svg"
-import newRecipe_CardSvg from "../Assets/Svgs/undraw_diet_ghvw.svg"
-
-
-
-
+import ourGoalsvg from "../Assets/Svgs/undraw_Done_checking_re_6vyx.svg";
+import contact_CardSvg from "../Assets/Svgs/undraw_active_support_6rwo.svg";
+import varietyOfDish_CardSvg from "../Assets/Svgs/undraw_barbecue_3x93.svg";
+import newRecipe_CardSvg from "../Assets/Svgs/undraw_diet_ghvw.svg";
 
 function Home() {
- 
-  const useStyles = makeStyles((theme) => ({
-    root: {
-      "& > *": {
-        margin: theme.spacing(1),
-      },
-    },
-  }));
-
   ///////////////
   return (
     <div className="Home">
@@ -60,11 +43,17 @@ function Home() {
       <div className="featuredRCP">
         <Splide className="FRCPsplide">
           <SplideSlide className="FRCPsplideSlide">
-            <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
+            <img
+              src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="latest recipe"
+            />
             <p>Name</p>
           </SplideSlide>
           <SplideSlide>
-            <img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" />
+            <img
+              src="https://images.unsplash.com/photo-1488900128323-21503983a07e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="latest recipe"
+            />
           </SplideSlide>
         </Splide>
 
@@ -110,12 +99,11 @@ function Home() {
           </div>
         </div>
         <div className="Abtimg">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
           <Player
             autoplay
             loop
-            src="https://assets10.lottiefiles.com/packages/lf20_nplwsz31.json" 
-
+            src="https://assets10.lottiefiles.com/packages/lf20_nplwsz31.json"
             className="aboutmeAnimation"
           >
             <Controls
@@ -127,53 +115,54 @@ function Home() {
       </div>
 
       <div className="ourGoal">
+        <div className="OG_Left">
+          {" "}
+          <div className="ourGoal_svg">
+            <img src={ourGoalsvg} alt="" srcset="" />
+          </div>
+        </div>
 
-
-
-
-        <div className="OG_Left"> <div className="ourGoal_svg"><img src={ourGoalsvg} alt="" srcset="" /></div></div>
-        
-        
         <div className="OG_Right">
-          
           <div className="OurGoalCardCont">
-          <div className="div left">
-          <div className="ICON-Cont">
-            <img src={newRecipe_CardSvg} alt="" />
-          </div>
+            <div className="div left">
+              <div className="ICON-Cont">
+                <img src={newRecipe_CardSvg} alt="" />
+              </div>
 
-          <p>Varity of dishes</p>
-          <span></span>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consectetur,
-          </p>
-        </div>
-        <div className="div middle">
-          <div className="ICON-Cont">
-            <img src={varietyOfDish_CardSvg} alt="" />
+              <p>Varity of dishes</p>
+              <span></span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur,
+              </p>
+            </div>
+            <div className="div middle">
+              <div className="ICON-Cont">
+                <img src={varietyOfDish_CardSvg} alt="" />
+              </div>
+              <p>Varity of dishes</p>
+              <span></span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur,
+              </p>
+            </div>
+            <div className=" div right">
+              <div className="ICON-Cont">
+                <img src={contact_CardSvg} alt="" />
+              </div>
+              <p>Varity of dishes</p>
+              <span></span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur,
+              </p>
+            </div>
           </div>
-          <p>Varity of dishes</p>
-          <span></span>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consectetur,
-          </p>
         </div>
-        <div className=" div right">
-          <div className="ICON-Cont">
-            <img src={contact_CardSvg} alt="" />
-          </div>
-          <p>Varity of dishes</p>
-          <span></span>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consectetur,
-          </p>
-        </div></div></div>
         {/* // variety of dishes // new recipe regularly // quick support // */}
-        {/* 
-        */}
+        {/*
+         */}
       </div>
       <Footer />
     </div>

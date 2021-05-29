@@ -5,7 +5,6 @@ import AboutCatagory from "./Components/AboutCatagory";
 import AboutRecipe from "./Components/AboutRecipe";
 import Recipes from "./Components/Recipes";
 import ContactUs from "./Components/ContactUs";
-import Footer from "./Components/Footer";
 
 import SideNav from "./Components/SideNav";
 
@@ -18,7 +17,7 @@ const App = () => {
         <NavBar></NavBar>
 
         <Switch>
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/name" component={AboutCatagory} />
           <Route path="/aboutRecipe" component={AboutRecipe} />
           <Route path="/Recipes" component={Recipes} />

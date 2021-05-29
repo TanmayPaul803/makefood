@@ -4,7 +4,7 @@ import CatGallayCard from "./CatGallayCard";
 import "../App.css";
 import CatagoryData from "./CatagoryData";
 import { NavLink } from "react-router-dom";
-import { makeStyles } from "@material-ui/core/styles";
+
 import Button from "@material-ui/core/Button";
 
 const Catagories = () => {
@@ -27,8 +27,7 @@ const Catagories = () => {
   };
 
   //Get API data ///
-  const apiKey = `1a9b8c803ccf4b57a34259e418add293`;
-  const query = `cake`;
+
   return (
     <>
       <div className="Catcontainer">
