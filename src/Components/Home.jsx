@@ -30,14 +30,15 @@ function Home() {
   return (
     <div className="Home">
       <HeroImg />
-      <MiddleNav />
-      <Switch>
+      {/* <MiddleNav /> */}
+      {/* <Switch>
         <Route path="/foodWebsite/catagories" component={Catagories} />
         <Route path="/foodWebsite/keywords" component={KeywordComponent} />
         <Route path="/foodWebsite/searched" component={SearchedComponent} />
         <Catagories />
         <KeywordComponent />
-      </Switch>
+      </Switch> */}
+      <Catagories />
 
       <LatestRecipes />
       <div className="featuredRCP">

@@ -145,6 +145,7 @@ video {
   padding: 50px 0px;
   font-size: 1.3rem;
   padding-left: 50px;
+  color: #4c4c4c;
 }
 .aboutMe .Abtext .myInfo {
   height: 200px;
@@ -239,7 +240,7 @@ video {
   font-size: 1.25rem;
   word-wrap: break-word;
   max-width: 800px;
-  color: rgb(252, 252, 240);
+  color: #b1b1b1;
 }
 .featuredRCP .right button {
   width: 150px;

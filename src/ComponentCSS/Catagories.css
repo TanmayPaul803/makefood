@@ -64,9 +64,8 @@ input {
   flex-wrap: wrap;
 }
 .catagoriesBar .contItem a {
-  color: beige;
+  color: #bdbdbd;
 }
-
 .catGallaryShow {
   align-items: center;
   justify-content: space-evenly;
