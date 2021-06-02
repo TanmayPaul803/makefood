@@ -56,9 +56,9 @@ function AboutRecipe(props) {
 
   //uncomment
 
-  // setTimeout(() => {
-  //   document.getElementById("desc").innerHTML = foodInfo.desc;
-  // }, 1000);
+  setTimeout(() => {
+    document.getElementById("desc").innerHTML = foodInfo.desc;
+  }, 1000);
   return (
     <>
       {foodInfo.ingredients.length === 0 ||
@@ -124,7 +124,7 @@ function AboutRecipe(props) {
                 </div>
                 <div className="desc">
                   <h1>Description</h1>
-                  <p id="desc"></p>
+                  <p id="desc">{foodInfo.desc}</p>
                 </div>
               </div>
               <hr className="RCP-hr" />
